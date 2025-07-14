@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+Professional React To-Do List Application
+A feature-rich to-do list web application built with React, React Bootstrap, and Create React App. Includes task management with categories (Personal/Professional), search, dropdown filtering, modal form, tabbed views, and local storage persistence.
+Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Add tasks via modal with title (required), due date, description, and category (Personal/Professional)
+Edit tasks with all fields and validation
+Delete tasks
+Mark tasks as completed with checkboxes
+Filter tasks by tabs (All, Active, Completed)
+Search tasks by title, description, or due date
+Dropdown filter within tabs (All, Pending, Completed)
+Persist tasks in local storage
+Smooth animations (modal fade, task hover, list fade)
+Responsive design with no text truncation
 
-## Available Scripts
+Prerequisites
 
-In the project directory, you can run:
+Node.js (v16 or higher)
+npm (v7 or higher)
+Git
 
-### `npm start`
+Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clone the repository:git clone <your-repo-url>
+cd todo-app
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Install dependencies:npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Start the development server:npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Open http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Project Structure
 
-### `npm run eject`
+src/
+App.js: Main component with search, dropdown, tabs, and task list.
+components/TaskList.js: Renders the list of tasks.
+components/TaskItem.js: Individual task with category badge.
+components/AddTaskModal.js: Modal form for adding tasks.
+App.css: Styles for animations and text wrapping.
+index.js: Entry point for React.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+index.html: HTML template.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Add Task: Click "Add New Task" to open a modal. Enter details and submit.
+Edit Task: Click "Edit", modify fields, and click "Save".
+Delete Task: Click "Delete".
+Complete Task: Check the checkbox.
+Filter Tabs: Use tabs (All, Active, Completed).
+Search: Type in the search bar to filter tasks.
+Dropdown Filter: Select All, Pending, or Completed from the dropdown.
+Persistence: Tasks persist after refresh via local storage.
 
-## Learn More
+Debugging
+Local Storage
+If tasks do not persist:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open DevTools (F12) > Application > Local Storage > http://localhost:3000.
+Check tasks key for a JSON array.
+View Console for logs:Loading tasks from local storage: [...]
+Saving tasks to local storage: [...]
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Clear local storage and test adding a task.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ESLint
+If errors occur:
 
-### Analyzing the Bundle Size
+Run npm run lint.
+Fix issues in reported files.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Technologies Used
 
-### Making a Progressive Web App
+React 18
+React Bootstrap 2
+Bootstrap 5
+Create React App
+Local Storage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributing
+Submit issues or pull requests to improve the application.
+License
+MIT License
