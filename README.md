@@ -1,5 +1,5 @@
 Professional React To-Do List Application
-A feature-rich to-do list web application built with React, React Bootstrap, and Create React App. Includes task management with categories (Personal/Professional), search, dropdown filtering, modal form, tabbed views, and local storage persistence.
+A feature-rich to-do list web application built with React, React Bootstrap, and Create React App. Includes task management with categories (Personal/Professional), search, modal form, tabbed views, and local storage persistence.
 Features
 
 Add tasks via modal with title (required), due date, description, and category (Personal/Professional)
